@@ -1,0 +1,138 @@
+
+.container {
+    margin: auto;
+    max-width: 750px;
+    padding-top: 30px;
+}
+.ava {
+    box-shadow:4px 4px 14px rgba(0, 0, 0, .25);
+    border-radius: 10px;
+    width: 200px;
+
+    
+}
+
+@media (max-width: 650px){
+    .container {
+        display: block;
+        text-align: center;
+    }
+
+}
+.info-text{
+    margin-left: 20px;
+}
+
+body {
+    font: normal 20px 'Roboto', sans-serif;
+    font-weight: 400;
+    background: #FFFAFA;
+    color:#000;
+}
+tbody {
+    font-style: italic;
+}
+
+.header {
+    font-style: italic;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px ;
+
+    display: flex;
+  
+    
+    }
+.header p{
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.Hobbi{
+    font-style: italic;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.mysocial {
+    font-size: 15px; 
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.card {
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.bg-yellow {
+    background: lemonchiffon;
+}
+.bg-red {
+    background: goldenrod;
+}
+
+.bg-green {
+    background: gainsboro;
+    
+    padding: 10px 10px 10px 10px;
+}
+
+.list li {
+
+    margin: 15px;
+    
+}
+.list ol li:hover{
+    color: pink;
+}
+.table {
+    text-align: center;
+    width: 100%;
+}
+
+.list ol li:hover:nth-child(even){
+    background: white;
+   
+}
+
+.forme {
+    background: gainsboro;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+    
+}
+
+.forme h3 {
+    text-align: center ;
+}
+.form-group label {
+    display: block;
+    font-size: 14px;
+}
+.form-group input,
+.form-group textarea {
+    width: 98%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid black;
+    color: black;
+    padding: 10px 0 15px;
+    font-family: inherit;
+
+}
+
+.form-row{
+    margin-bottom: 10px;
+    display: flex;
+}
+.form-row .form-group{
+
+    margin-right: 20px;
+    width:50%;
+}

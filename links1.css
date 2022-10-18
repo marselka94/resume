@@ -1,0 +1,24 @@
+.btn {
+    font-family: inherit;
+    background: lemonchiffon;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+.btn:hover {
+    opacity: 0.8;
+    color: red;
+}
+a {
+    color: #000;
+}
+
+a:active {
+    color:blue;
+}
+a:visited {
+    color: red;
+}

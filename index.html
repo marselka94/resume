@@ -7,24 +7,56 @@
     <meta name="keywords" content="marsel,cv, resume ">
     <meta name="description" content="Этот сайт-резюме Марселя Харисова ">
     <title>Marsel Site</title>
+    <link rel="stylesheet" href="myproject.css">
+    <link rel="stylesheet" href="links1.css">
 </head>
-<body>
-    <img src="images/111.png" alt="Avatarka" width="150">
-    <h1>Меня зовут Марсель.</h1>
-    <p>Я родился в Йошкар-Оле в <strong>1994</strong> году.<br>Учился в "ПОВОЛЖСКОМ ГОСУДАРСТВЕННОМ ТЕХНОЛОГИЧЕСКОМ УНИВЕРСИТЕТЕ".</p>
-    <p><strong><em>Люблю играть</em> </strong><em>в компьютерный игры.</em></p>
-    <h5><em>Мои социальные сети</em></h5>
-    <a href="https://vk.com/id84721959" target="_blank">Vkontakte</a>
-    <h2>Мои хобби</h2>
+<style>
+    .media {
+        max-width: 650px;
+        margin: auto;
+    }
+    @media (max-width: 650px){
+        .media {
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 10px;
+            /* display: block; */
+        }
 
-        <ol>
-            <li>Рыбалка</li>
-            <li>UFC</li>
-            <li>Спорт</li>
-            <li>Машины</li>
-        </ol>
-    <h2>Опыт работы</h2>
-    <table>
+    }
+
+</style>
+<body class="media">
+   <div class="container">
+    
+    
+    <div class="header">
+        <img src="111.png" alt="Avatarka"  class="ava"  >
+        <div class="info-text">
+            <h3>Марсель Харисов</h3>
+            <p>Я родился в Йошкар-Оле в 1994 году.
+                <br>Учился в "ПОВОЛЖСКОМ ГОСУДАРСТВЕННОМ ТЕХНОЛОГИЧЕСКОМ УНИВЕРСИТЕТЕ".</p>
+            <p>Люблю играть в компьютерный игры.</p>
+        </div>
+       
+    </div>
+
+    <div class="card mysocial bg-yellow">
+        <h2><em>Мои социальные сети</em></h2>
+    <a href="https://vk.com/id84721959"  target="_blank">Vkontakte</a>
+    </div>
+        <div class="card Hobbi bg-red list" >
+            <h3>Мои хобби</h3>
+            <ol>
+                <li>Рыбалка</li>
+                <li>UFC</li>
+                <li>Спорт</li>
+                <li>Машины</li>
+                </ol>
+            </div>
+        <div class="card bg-green">
+    <h3>Опыт работы</h3>
+    <table class="table">
         <thead>
             <tr>
                 <th>Название</th>
@@ -41,36 +73,43 @@
             </tr>
             <tr>
                 <td>ТЦ"Кооператор"</td>
-                <td>Инвидуальный предприниматель</td>
+                <td>Индивидуальный предприниматель</td>
                 <td>2016-2022</td>
             </tr>
+            
         </tbody>
     </table>
-    <h2>Связаться со мной </h2>
+            </div>
+    
 
-    <form action="/">
-        <div>
-            <label for="name">Ваше имя: </label>
+    <form action="/" class="forme">
+        <h3>Связаться со мной </h3>
+        <div class="form-row">
+        <div class="form-group">
+            <label for="name" >Ваше имя: </label>
             <input type="text" id="name" placeholder="Введите имя ">
         </div>
-        <div>
-            <label for="email">Ваш email :</label>
+        <div class="form-group">
+            <label for="email" >Ваш email :</label>
             <input type="email" id="email" placeholder="Введите email ">
         </div>
+    </div>
 
-        <div>
-            <label for="message">Ваше Сообщение:</label>
-            <br>
+        <div class="form-group">
+            <label for="message" >Ваше Сообщение:</label>
+        
             <textarea id="message" id="" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
         </div>
 
         <div>
         
-           <button type="submit">Отправить !</button>
+           <button class="btn" >Отправить !</button>
+           
         </div>
         
         
     </form>
+            </div>
 
 </body>
 </html>
